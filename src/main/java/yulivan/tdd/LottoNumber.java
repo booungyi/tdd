@@ -9,8 +9,9 @@ public class LottoNumber {
 
     public LottoNumber() {
     }
-
-
+// 0 1 2 3 4 5
+// 1
+// 2 2
     public LottoNumber(int 번호) {
         this.번호 = 번호;
 

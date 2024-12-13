@@ -14,8 +14,6 @@ public class FindLottoNumTest {
         List<Integer> 번호목록 = new ArrayList<>(
                 List.of(1, 2, 3, 4, 5, 6)
         );
-
-
         List<LottoNumber> 로또번호목록 = new ArrayList<>(
                 List.of(
                         new LottoNumber(1),
@@ -27,7 +25,6 @@ public class FindLottoNumTest {
                 ));
         assertThat(toLottoNumbers(번호목록)).isEqualTo(로또번호목록);
     }
-
     List<LottoNumber> toLottoNumbers(List<Integer> 번호목록) {
 
         List<LottoNumber> 로또번호 = new ArrayList<>();
@@ -38,7 +35,6 @@ public class FindLottoNumTest {
         }
         return 로또번호;
     }
-
     @Test
     void checkLottoRankTest() {
 
@@ -57,9 +53,7 @@ public class FindLottoNumTest {
         int 보너스번호 = 1;
 
         assertThat(checkLottoRank(로또번호목록, 당첨번호목록, 보너스번호)).isEqualTo(2);
-
     }
-
     int checkLottoRank(List<LottoNumber> 로또번호, List<Integer> 당첨번호, int 보너스번호) {
         //TOdo 방법1 : 당첨번호를 로또번호 변수로받는다.
 //        List<LottoNumber> 당첨번호변경 = new ArrayList<>();
@@ -96,10 +90,5 @@ public class FindLottoNumTest {
             return 1;
         }
         return 6;
-    }
-
-    int checkLottoRank2(List<LottoNumber> 로또번호, List<Integer> 당첨번호) {
-        List<Integer> 로또번호변환 = new ArrayList<>();
-        return 5;
     }
 }
