@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class LottoNumber {
     int 번호;
-
+    int 보너스번호 = 1;
     public LottoNumber() {
     }
 // 0 1 2 3 4 5
@@ -16,6 +16,9 @@ public class LottoNumber {
         this.번호 = 번호;
 
     }
+
+    public List<Integer> 당첨번호목록 = new ArrayList<>(
+            List.of(2, 3, 4, 5, 6,1));
 
     @Override
     public boolean equals(Object o) {
